@@ -20,9 +20,9 @@ rm coOccurrenceMatrix
 rm Normalize
 rm Multiplication
 rm Sum
-hdfs dfs -get /dataDividedByUser/part-r-00000 dataDividedByUser
-hdfs dfs -get /EstimateRating/part-r-00000 EstimateRating
-hdfs dfs -get /coOccurrenceMatrix/part-r-00000 coOccurrenceMatrix
-hdfs dfs -get /Normalize/part-r-00000 Normalize
-hdfs dfs -get /Multiplication/part-r-00000 Multiplication
-hdfs dfs -get /Sum/part-r-00000 Sum
+hdfs dfs -cat /dataDividedByUser/* dataDividedByUser
+hdfs dfs -cat /EstimateRating/* EstimateRating
+hdfs dfs -cat /coOccurrenceMatrix/* coOccurrenceMatrix
+hdfs dfs -cat /Normalize/* Normalize
+hdfs dfs -cat /Multiplication/* Multiplication
+hdfs dfs -cat /Sum/* Sum
